@@ -1,0 +1,12 @@
+burg
+5
+frito
+7
+xbacon
+6
+xburg
+4
+xsalada
+5
+xtudo
+10.25

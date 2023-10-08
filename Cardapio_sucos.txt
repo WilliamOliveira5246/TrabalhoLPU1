@@ -1,0 +1,10 @@
+acerola
+4
+caju
+4
+laranja
+4
+limao
+3
+uva
+6.5

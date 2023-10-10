@@ -6,10 +6,12 @@
 
 using namespace std;
 
+//os maps podem ser consumidos por qualquer cpp que possuam include de geral.hpp, pois possuem definicao extern.
 map<string, float> sanduiches;
 map<string, float> sucos;
 map<string, float> carrinho;
 
+//resgata dados do arquivo Cardapio_sanduiches.txt para o map sanduiches
 void abrirCardapioSanduiches()
 {
   vector<string> linhas;
@@ -23,7 +25,7 @@ void abrirCardapioSanduiches()
   arquivo.close();
   if (linhas.empty())
   {
-    cout << "Arquivo vazio!!!" << endl;
+    cout << "Aviso: Cardapio_sanduiches.txt esta vazio." << endl;
   }
   else
   {
@@ -34,6 +36,7 @@ void abrirCardapioSanduiches()
   }
 }
 
+//resgata dados do arquivo Cardapio_sucos.txt para o map sanduiches
 void abrirCardapioSucos()
 {
   vector<string> linhas;
@@ -47,7 +50,7 @@ void abrirCardapioSucos()
   arquivo.close();
   if (linhas.empty())
   {
-    cout << "Arquivo vazio!!!" << endl;
+    cout << "Aviso: Cardapio_sucos.txt esta vazio." << endl;
   }
   else
   {
@@ -58,6 +61,7 @@ void abrirCardapioSucos()
   }
 }
 
+//imprime map sanduiches
 void listarSanduiches()
 {
   map<string, float>::iterator it;
@@ -72,6 +76,7 @@ void listarSanduiches()
   }
 }
 
+//imprime map sucos
 void listarSucos()
 {
   map<string, float>::iterator it;
@@ -86,11 +91,13 @@ void listarSucos()
   }
 }
 
+//limpa a tela
 void clear()
 {
   system("clear");
 }
 
+//Pausa o processo, esperando um caracter qualquer para dar seguimento
 void pressQualquer()
 {
   std::cout << "\nPressione qualquer tecla para continuar...\n";

@@ -15,8 +15,8 @@ int main(){
     string const SENHAVALIDA = "admin";
     int perfil = 0;
     int sair = 0;
-    string nome;
-    float preco;
+    string nome = "";
+    float preco = 0.0;
 
     map<string, float> sanduiches;
     map<string, float> sucos;
@@ -158,8 +158,6 @@ int main(){
     }
 
     while (perfil == 2 && selecao != 8){
-        
-        abrirCarrinho();
 
         cout << "============================================" << endl;
         cout << "||        O que você deseja fazer?        ||" << endl;
@@ -228,13 +226,11 @@ int main(){
                 break;
             case 7:
                 clear();
-                salvarCarrinho();
                 cout << "[Ver valor total do carrinho]\n";
                 cout << "Valor: " << calcularValorCarrinho();
                 pressQualquer();
                 break;
             case 8:
-                salvarCarrinho();
                 clear();
                 cout << "Saindo do programa. Até mais!" << endl;
                 pressQualquer();

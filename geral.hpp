@@ -2,10 +2,11 @@
 #define MAIN_HPP
 
 #include<map>
+#include<vector>
 
 extern std::map<std::string, float> sanduiches;
 extern std::map<std::string, float> sucos;
-extern std::map<std::string, float> carrinho;
+extern std::map<std::string, std::vector<float>> carrinho;
 
 void abrirCardapioSanduiches();
 void abrirCardapioSucos();

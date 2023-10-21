@@ -9,7 +9,7 @@ using namespace std;
 //os maps podem ser consumidos por qualquer cpp que possuam include de geral.hpp, pois possuem definicao extern.
 map<string, float> sanduiches;
 map<string, float> sucos;
-map<string, float> carrinho;
+map<string, vector<float>> carrinho;
 
 //resgata dados do arquivo Cardapio_sanduiches.txt para o map sanduiches
 void abrirCardapioSanduiches()
